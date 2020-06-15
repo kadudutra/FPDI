@@ -2,21 +2,21 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\Type;
+namespace kadudutra\Fpdi\PdfParser\Type;
 
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Tokenizer;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Tokenizer;
 
 /**
  * Class representing a PDF dictionary object
  *
- * @package setasign\Fpdi\PdfParser\Type
+ * @package kadudutra\Fpdi\PdfParser\Type
  */
 class PdfDictionary extends PdfType
 {

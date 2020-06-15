@@ -46,7 +46,7 @@ $start = microtime(true);
 if ($useLegacy) {
     $pdf = new \FPDI('P', 'pt', 'A3');
 } else {
-    $pdf = new setasign\Fpdi\Fpdi('P', 'pt', 'A3');
+    $pdf = new kadudutra\Fpdi\Fpdi('P', 'pt', 'A3');
 }
 
 foreach ($files as $file) {

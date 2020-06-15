@@ -1,9 +1,9 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Filter;
+namespace kadudutra\Fpdi\functional\PdfParser\Filter;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Filter\Ascii85;
+use kadudutra\Fpdi\PdfParser\Filter\Ascii85;
 
 class Ascii85Test extends TestCase
 {
@@ -80,8 +80,8 @@ class Ascii85Test extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Filter\Ascii85Exception
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Filter\Ascii85Exception::ILLEGAL_CHAR_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\Filter\Ascii85Exception
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Filter\Ascii85Exception::ILLEGAL_CHAR_FOUND
      */
     public function testDecodeWithIllegalCharacter()
     {
@@ -91,8 +91,8 @@ class Ascii85Test extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Filter\Ascii85Exception
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Filter\Ascii85Exception::ILLEGAL_LENGTH
+     * @expectedException \kadudutra\Fpdi\PdfParser\Filter\Ascii85Exception
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Filter\Ascii85Exception::ILLEGAL_LENGTH
      */
     public function testDecodeWithIllegalLength()
     {

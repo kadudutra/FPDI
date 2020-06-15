@@ -1,22 +1,22 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser;
+namespace kadudutra\Fpdi\functional\PdfParser;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfBoolean;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfHexString;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfString;
-use setasign\Fpdi\PdfParser\Type\PdfToken;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Type\PdfArray;
+use kadudutra\Fpdi\PdfParser\Type\PdfBoolean;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfHexString;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfNull;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\Type\PdfToken;
 
 class PdfParserTest extends TestCase
 {
@@ -202,7 +202,7 @@ class PdfParserTest extends TestCase
      * @param $in
      * @param $expectedType
      * @param $expectedResult
-     * @throws \setasign\Fpdi\PdfParser\Type\PdfTypeException
+     * @throws \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
      * @dataProvider readValueWithExpectedTypeProvider
      */
     public function testReadValueWithExpectedType($in, $expectedType, $expectedResult)
@@ -258,9 +258,9 @@ class PdfParserTest extends TestCase
     /**
      * @param $in
      * @param $expectedType
-     * @throws \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
+     * @throws \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
      * @dataProvider readValueWithInvalidTypeProvider
      */
     public function testReadValueWithInvalidType($in, $expectedType)
@@ -293,8 +293,8 @@ class PdfParserTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\PdfParserException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\PdfParserException::FILE_HEADER_NOT_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\PdfParserException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\PdfParserException::FILE_HEADER_NOT_FOUND
      */
     public function testGetPdfVersionOnLargeNonPdfDocument()
     {
@@ -329,8 +329,8 @@ class PdfParserTest extends TestCase
     /**
      * This document has objects hidden through a compressed cross-reference
      *
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::OBJECT_NOT_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::OBJECT_NOT_FOUND
      */
     public function testGetIndirectObjectOnHybridFile()
     {
@@ -365,9 +365,9 @@ class PdfParserTest extends TestCase
      * If we wouldn't expect a specific object type when resolving an indirect object, this test would end in a try to
      * build a recursive array with a depth of more than 15.000.000 which would end in a memory problem.
      *
-     * @throws \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @throws \setasign\Fpdi\PdfParser\PdfParserException
-     * @expectedException \setasign\Fpdi\PdfParser\PdfParserException
+     * @throws \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @throws \kadudutra\Fpdi\PdfParser\PdfParserException
+     * @expectedException \kadudutra\Fpdi\PdfParser\PdfParserException
      * @expectedExceptionMessageRegExp /Got unexpected token type/
      */
     public function testGetIndirectObjectWithInvalidType()

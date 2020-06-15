@@ -1,8 +1,8 @@
 <?php
 
-namespace setasign\Fpdi\visual;
+namespace kadudutra\Fpdi\visual;
 
-use setasign\Fpdi\FpdfTpl;
+use kadudutra\Fpdi\FpdfTpl;
 
 class FpdfTplTest extends VisualTestCase
 {

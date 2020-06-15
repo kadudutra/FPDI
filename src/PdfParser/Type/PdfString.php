@@ -2,19 +2,19 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\Type;
+namespace kadudutra\Fpdi\PdfParser\Type;
 
-use setasign\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\StreamReader;
 
 /**
  * Class representing a PDF string object
  *
- * @package setasign\Fpdi\PdfParser\Type
+ * @package kadudutra\Fpdi\PdfParser\Type
  */
 class PdfString extends PdfType
 {

@@ -2,19 +2,19 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\PdfParser\CrossReference;
 
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
 
 /**
  * ReaderInterface for cross-reference readers.
  *
- * @package setasign\Fpdi\PdfParser\CrossReference
+ * @package kadudutra\Fpdi\PdfParser\CrossReference
  */
 interface ReaderInterface
 {

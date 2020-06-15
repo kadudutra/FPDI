@@ -2,19 +2,19 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser;
+namespace kadudutra\Fpdi\PdfParser;
 
-use setasign\Fpdi\FpdiException;
+use kadudutra\Fpdi\FpdiException;
 
 /**
  * Exception for the pdf parser class
  *
- * @package setasign\Fpdi\PdfParser
+ * @package kadudutra\Fpdi\PdfParser
  */
 class PdfParserException extends FpdiException
 {

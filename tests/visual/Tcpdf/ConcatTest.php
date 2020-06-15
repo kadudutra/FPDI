@@ -1,18 +1,18 @@
 <?php
 
-namespace setasign\Fpdi\visual\Tcpdf;
+namespace kadudutra\Fpdi\visual\Tcpdf;
 
-use setasign\Fpdi\PdfReader\PageBoundaries;
-use setasign\Fpdi\Tcpdf\Fpdi;
+use kadudutra\Fpdi\PdfReader\PageBoundaries;
+use kadudutra\Fpdi\Tcpdf\Fpdi;
 
-class ConcatTest extends \setasign\Fpdi\visual\ConcatTest
+class ConcatTest extends \kadudutra\Fpdi\visual\ConcatTest
 {
     /**
      * If $inputData is an array the key 'tmpPath' is needed
      *
      * @param string|array $inputData
      * @param string $outputFile
-     * @throws \setasign\Fpdi\PdfReader\PdfReaderException
+     * @throws \kadudutra\Fpdi\PdfReader\PdfReaderException
      */
     public function createPDF($inputData, $outputFile)
     {

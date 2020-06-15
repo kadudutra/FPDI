@@ -1,8 +1,8 @@
 <?php
 
-namespace setasign\Fpdi\visual\Alpha;
+namespace kadudutra\Fpdi\visual\Alpha;
 
-use setasign\Fpdi;
+use kadudutra\Fpdi;
 
 class AlphaPdf extends Fpdi\Fpdi
 {

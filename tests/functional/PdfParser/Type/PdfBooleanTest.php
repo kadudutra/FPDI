@@ -1,10 +1,10 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Type;
+namespace kadudutra\Fpdi\functional\PdfParser\Type;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Type\PdfBoolean;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfBoolean;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
 
 class PdfBooleanTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Filter;
+namespace kadudutra\Fpdi\functional\PdfParser\Filter;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Filter\Flate;
+use kadudutra\Fpdi\PdfParser\Filter\Flate;
 
 class FlateTest extends TestCase
 {
@@ -50,9 +50,9 @@ class FlateTest extends TestCase
     }
 
     /**
-     * @covers \setasign\Fpdi\PdfParser\Filter\Flate::decode
-     * @expectedException \setasign\Fpdi\PdfParser\Filter\FlateException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Filter\FlateException::NO_ZLIB
+     * @covers \kadudutra\Fpdi\PdfParser\Filter\Flate::decode
+     * @expectedException \kadudutra\Fpdi\PdfParser\Filter\FlateException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Filter\FlateException::NO_ZLIB
      */
     public function testDecodeWithoutZlib()
     {

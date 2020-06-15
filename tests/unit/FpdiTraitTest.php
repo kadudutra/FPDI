@@ -1,10 +1,10 @@
 <?php
 
-namespace setasign\Fpdi\unit;
+namespace kadudutra\Fpdi\unit;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\Fpdi;
-use setasign\Fpdi\FpdiTrait;
+use kadudutra\Fpdi\Fpdi;
+use kadudutra\Fpdi\FpdiTrait;
 
 abstract class FpdiTraitTest extends TestCase
 {

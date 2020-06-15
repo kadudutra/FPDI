@@ -2,15 +2,15 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\PdfParser\CrossReference;
 
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
 
 /**
  * Class LineReader
@@ -18,7 +18,7 @@ use setasign\Fpdi\PdfParser\StreamReader;
  * This reader class read all cross-reference entries in a single run.
  * It supports reading cross-references with e.g. invalid data (e.g. entries with a length < or > 20 bytes).
  *
- * @package setasign\Fpdi\PdfParser\CrossReference
+ * @package kadudutra\Fpdi\PdfParser\CrossReference
  */
 class LineReader extends AbstractReader implements ReaderInterface
 {

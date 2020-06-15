@@ -1,12 +1,12 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\functional\PdfParser\CrossReference;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\FixedReader;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\CrossReference\FixedReader;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
 
 class FixedReaderTest extends TestCase
 {
@@ -206,7 +206,7 @@ class FixedReaderTest extends TestCase
 
     /**
      * @throws CrossReferenceException
-     * @expectedException setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedException kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
      * @expectedExceptionMessageRegExp /got: trialer\.$/
      */
     public function testReadTrailerWithInvalidData1()
@@ -222,7 +222,7 @@ class FixedReaderTest extends TestCase
 
     /**
      * @throws CrossReferenceException
-     * @expectedException setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedException kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
      * @expectedExceptionMessageRegExp /invalid object type\.$/
      */
     public function testReadTrailerWithInvalidData2()

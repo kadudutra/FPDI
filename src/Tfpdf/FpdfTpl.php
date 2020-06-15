@@ -2,21 +2,21 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\Tfpdf;
+namespace kadudutra\Fpdi\Tfpdf;
 
-use setasign\Fpdi\FpdfTplTrait;
+use kadudutra\Fpdi\FpdfTplTrait;
 
 /**
  * Class FpdfTpl
  *
  * We need to change some access levels and implement the setPageFormat() method to bring back compatibility to tFPDF.
  *
- * @package setasign\Fpdi\Tfpdf
+ * @package kadudutra\Fpdi\Tfpdf
  */
 class FpdfTpl extends \tFPDF
 {
