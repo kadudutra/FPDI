@@ -1,19 +1,19 @@
 <?php
 
-namespace setasign\Fpdi\unit\PdfReader;
+namespace kadudutra\Fpdi\unit\PdfReader;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfReader\DataStructure\Rectangle;
-use setasign\Fpdi\PdfReader\Page;
-use setasign\Fpdi\PdfReader\PageBoundaries;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\Type\PdfArray;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfStream;
+use kadudutra\Fpdi\PdfReader\DataStructure\Rectangle;
+use kadudutra\Fpdi\PdfReader\Page;
+use kadudutra\Fpdi\PdfReader\PageBoundaries;
 
 class PageTest extends TestCase
 {

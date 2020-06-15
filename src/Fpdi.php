@@ -2,24 +2,24 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi;
+namespace kadudutra\Fpdi;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\PdfParserException;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfNull;
 
 /**
  * Class Fpdi
  *
  * This class let you import pages of existing PDF documents into a reusable structure for FPDF.
  *
- * @package setasign\Fpdi
+ * @package kadudutra\Fpdi
  */
 class Fpdi extends FpdfTpl
 {

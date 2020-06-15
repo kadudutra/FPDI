@@ -2,15 +2,15 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\PdfParser\CrossReference;
 
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
 
 /**
  * Class FixedReader
@@ -18,7 +18,7 @@ use setasign\Fpdi\PdfParser\StreamReader;
  * This reader allows a very less overhead parsing of single entries of the cross-reference, because the main entries
  * are only read when needed and not in a single run.
  *
- * @package setasign\Fpdi\PdfParser\CrossReference
+ * @package kadudutra\Fpdi\PdfParser\CrossReference
  */
 class FixedReader extends AbstractReader implements ReaderInterface
 {

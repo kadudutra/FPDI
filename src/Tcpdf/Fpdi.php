@@ -1,26 +1,26 @@
 <?php
 
-namespace setasign\Fpdi\Tcpdf;
+namespace kadudutra\Fpdi\Tcpdf;
 
-use setasign\Fpdi\FpdiTrait;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\Filter\AsciiHex;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\Type\PdfHexString;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfParser\Type\PdfString;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
+use kadudutra\Fpdi\FpdiTrait;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\Filter\AsciiHex;
+use kadudutra\Fpdi\PdfParser\PdfParserException;
+use kadudutra\Fpdi\PdfParser\Type\PdfHexString;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfNull;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfStream;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\Type\PdfType;
+use kadudutra\Fpdi\PdfParser\Type\PdfTypeException;
 
 /**
  * Class Fpdi
  *
  * This class let you import pages of existing PDF documents into a reusable structure for TCPDF.
  *
- * @package setasign\Fpdi
+ * @package kadudutra\Fpdi
  */
 class Fpdi extends \TCPDF
 {

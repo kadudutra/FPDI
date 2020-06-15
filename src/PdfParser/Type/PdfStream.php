@@ -2,28 +2,28 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\Type;
+namespace kadudutra\Fpdi\PdfParser\Type;
 
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\Filter\Ascii85;
-use setasign\Fpdi\PdfParser\Filter\AsciiHex;
-use setasign\Fpdi\PdfParser\Filter\FilterException;
-use setasign\Fpdi\PdfParser\Filter\Flate;
-use setasign\Fpdi\PdfParser\Filter\Lzw;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\PdfParser\Filter\Predictor;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\Filter\Ascii85;
+use kadudutra\Fpdi\PdfParser\Filter\AsciiHex;
+use kadudutra\Fpdi\PdfParser\Filter\FilterException;
+use kadudutra\Fpdi\PdfParser\Filter\Flate;
+use kadudutra\Fpdi\PdfParser\Filter\Lzw;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\PdfParserException;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\PdfParser\Filter\Predictor;
 
 /**
  * Class representing a PDF stream object
  *
- * @package setasign\Fpdi\PdfParser\Type
+ * @package kadudutra\Fpdi\PdfParser\Type
  */
 class PdfStream extends PdfType
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace setasign\Fpdi\functional;
+namespace kadudutra\Fpdi\functional;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\FpdfTpl;
-use setasign\Fpdi\Fpdi;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfReader\PdfReader;
+use kadudutra\Fpdi\FpdfTpl;
+use kadudutra\Fpdi\Fpdi;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfStream;
+use kadudutra\Fpdi\PdfParser\Type\PdfType;
+use kadudutra\Fpdi\PdfReader\PdfReader;
 
 class FpdfTplTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Filter;
+namespace kadudutra\Fpdi\functional\PdfParser\Filter;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Filter\AsciiHex;
+use kadudutra\Fpdi\PdfParser\Filter\AsciiHex;
 
 class AsciiHexTest extends TestCase
 {

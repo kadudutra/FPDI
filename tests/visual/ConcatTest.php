@@ -1,9 +1,9 @@
 <?php
 
-namespace setasign\Fpdi\visual;
+namespace kadudutra\Fpdi\visual;
 
-use setasign\Fpdi\Fpdi;
-use setasign\Fpdi\PdfReader\PageBoundaries;
+use kadudutra\Fpdi\Fpdi;
+use kadudutra\Fpdi\PdfReader\PageBoundaries;
 
 class ConcatTest extends VisualTestCase
 {

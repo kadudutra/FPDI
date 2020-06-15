@@ -1,10 +1,10 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser;
+namespace kadudutra\Fpdi\functional\PdfParser;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Tokenizer;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Tokenizer;
 
 class TokenizerTest extends TestCase
 {

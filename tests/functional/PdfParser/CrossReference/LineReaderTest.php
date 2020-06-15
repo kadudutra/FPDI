@@ -1,12 +1,12 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\functional\PdfParser\CrossReference;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\LineReader;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\CrossReference\LineReader;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
 
 class LineReaderTest extends TestCase
 {
@@ -147,8 +147,8 @@ class LineReaderTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::NO_TRAILER_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::NO_TRAILER_FOUND
      */
     public function testExtractWithInvalidData()
     {
@@ -184,7 +184,7 @@ class LineReaderTest extends TestCase
     /**
      * @param $table
      * @dataProvider parseFlexibleWithInvalidDataProvider
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
      */
     public function testParseFlexibleWithInvalidData($table, $expectedExceptionCode)
     {

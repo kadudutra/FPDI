@@ -7,13 +7,13 @@ FPDI - Free PDF Document Importer
 [![License](https://poser.pugx.org/setasign/fpdi/license.svg)](https://packagist.org/packages/setasign/fpdi)
 [![Build Status](https://travis-ci.org/Setasign/FPDI.svg?branch=development)](https://travis-ci.org/Setasign/FPDI)
 
-:heavy_exclamation_mark: This document refers to FPDI 2. Version 1 is deprecated and development is discontinued. :heavy_exclamation_mark: 
+:heavy_exclamation_mark: This document refers to FPDI 2. Version 1 is deprecated and development is discontinued. :heavy_exclamation_mark:
 
 FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF
 documents and use them as templates in [FPDF](http://www.fpdf.org), which was developed by Olivier Plathey. Apart
 from a copy of [FPDF](http://www.fpdf.org), FPDI does not require any special PHP extensions.
 
-FPDI can also be used as an extension for [TCPDF](https://github.com/tecnickcom/TCPDF) or 
+FPDI can also be used as an extension for [TCPDF](https://github.com/tecnickcom/TCPDF) or
 [tFPDF](http://fpdf.org/en/script/script92.php), too.
 
 ## Installation with [Composer](https://packagist.org/packages/setasign/fpdi)
@@ -67,7 +67,7 @@ If you have a PSR-4 autoloader implemented, just register the src path as follow
 ```php
 $loader = new \Example\Psr4AutoloaderClass;
 $loader->register();
-$loader->addNamespace('setasign\Fpdi', 'path/to/src/');
+$loader->addNamespace('kadudutra\Fpdi', 'path/to/src/');
 ```
 
 ## Changes to Version 1
@@ -88,7 +88,7 @@ We tried to keep the main methods and logical workflow the same as in version 1 
 notice that there were incompatible changes which you should consider when updating to
 version 2:
 - You need to load the code using the `src/autoload.php` file instead of `classes/FPDI.php`.
-- The classes and traits are namespaced now: `setasign\Fpdi`
+- The classes and traits are namespaced now: `kadudutra\Fpdi`
 - Page boundaries beginning with a slash, such as `/MediaBox`, are not supported anymore. Remove
   the slash or use a constant of `PdfReader\PageBoundaries`.
 - The parameters $x, $y, $width and $height of the `useTemplate()` or `getTemplateSize()`
@@ -105,12 +105,12 @@ A simple example, that imports a single page and places this onto a new created 
 
 ```php
 <?php
-use setasign\Fpdi\Fpdi;
+use kadudutra\Fpdi\Fpdi;
 // or for usage with TCPDF:
-// use setasign\Fpdi\Tcpdf\Fpdi;
+// use kadudutra\Fpdi\Tcpdf\Fpdi;
 
 // or for usage with tFPDF:
-// use setasign\Fpdi\Tfpdf\Fpdi;
+// use kadudutra\Fpdi\Tfpdf\Fpdi;
 
 // setup the autoload function
 require_once('vendor/autoload.php');
@@ -126,7 +126,7 @@ $tplId = $pdf->importPage(1);
 // use the imported page and place it at point 10,10 with a width of 100 mm
 $pdf->useTemplate($tplId, 10, 10, 100);
 
-$pdf->Output();            
+$pdf->Output();
 ```
 
 A full end-user documentation and API reference is available [here](https://manuals.setasign.com/fpdi-manual/).

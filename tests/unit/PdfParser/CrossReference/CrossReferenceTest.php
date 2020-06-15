@@ -1,10 +1,10 @@
 <?php
 
-namespace setasign\Fpdi\unit\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\unit\PdfParser\CrossReference;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReference;
-use setasign\Fpdi\PdfParser\CrossReference\FixedReader;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReference;
+use kadudutra\Fpdi\PdfParser\CrossReference\FixedReader;
 
 class CrossReferenceTest extends TestCase
 {
@@ -45,8 +45,8 @@ class CrossReferenceTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::OBJECT_NOT_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::OBJECT_NOT_FOUND
      */
     public function testGetIndirectObjectWithInvalidObjectId()
     {

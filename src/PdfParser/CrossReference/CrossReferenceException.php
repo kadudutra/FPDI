@@ -2,19 +2,19 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfParser\CrossReference;
+namespace kadudutra\Fpdi\PdfParser\CrossReference;
 
-use setasign\Fpdi\PdfParser\PdfParserException;
+use kadudutra\Fpdi\PdfParser\PdfParserException;
 
 /**
  * Exception used by the CrossReference and Reader classes.
  *
- * @package setasign\Fpdi\PdfParser\CrossReference
+ * @package kadudutra\Fpdi\PdfParser\CrossReference
  */
 class CrossReferenceException extends PdfParserException
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser;
+namespace kadudutra\Fpdi\functional\PdfParser;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReference;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfBoolean;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfHexString;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReference;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Type\PdfArray;
+use kadudutra\Fpdi\PdfParser\Type\PdfBoolean;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfHexString;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfStream;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
 
 class CrossReferenceTest extends TestCase
 {
@@ -329,8 +329,8 @@ class CrossReferenceTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
      */
     public function testWithInvalidTokenAfterStartXrefKeyword()
     {
@@ -341,8 +341,8 @@ class CrossReferenceTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
      */
     public function testWithInvalidPrevValue()
     {
@@ -532,8 +532,8 @@ class CrossReferenceTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::COMPRESSED_XREF
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::COMPRESSED_XREF
      */
     public function testBehaviourOnCompressedXref()
     {
@@ -546,10 +546,10 @@ class CrossReferenceTest extends TestCase
      * Test the behavior of a single cross-reference while the startxref key points to the offset 0.
      *
      * @throws CrossReferenceException
-     * @throws \setasign\Fpdi\PdfParser\Type\PdfTypeException
+     * @throws \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
      *
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::NO_XREF_FOUND
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::NO_XREF_FOUND
      */
     public function testBehaviourWithByteOffsetZero()
     {
@@ -599,8 +599,8 @@ class CrossReferenceTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::INVALID_DATA
      */
     public function testBehaviourWithWrongObjectTypeAttXrefOffset()
     {

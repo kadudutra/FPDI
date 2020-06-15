@@ -1,14 +1,14 @@
 <?php
 
-namespace setasign\Fpdi\functional\Tcpdf;
+namespace kadudutra\Fpdi\functional\Tcpdf;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfReader\PdfReader;
-use setasign\Fpdi\Tcpdf\Fpdi;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Type\PdfNull;
+use kadudutra\Fpdi\PdfParser\Type\PdfType;
+use kadudutra\Fpdi\PdfReader\PdfReader;
+use kadudutra\Fpdi\Tcpdf\Fpdi;
 
 class FpdiTest extends TestCase
 {
@@ -87,8 +87,8 @@ class FpdiTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException::COMPRESSED_XREF
+     * @expectedException \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException::COMPRESSED_XREF
      */
     public function testBehaviourOnCompressedXref()
     {

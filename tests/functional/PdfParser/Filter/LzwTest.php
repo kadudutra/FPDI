@@ -1,9 +1,9 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Filter;
+namespace kadudutra\Fpdi\functional\PdfParser\Filter;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Filter\Lzw;
+use kadudutra\Fpdi\PdfParser\Filter\Lzw;
 
 class LzwTest extends TestCase
 {
@@ -35,8 +35,8 @@ class LzwTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Filter\LzwException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Filter\LzwException::LZW_FLAVOUR_NOT_SUPPORTED
+     * @expectedException \kadudutra\Fpdi\PdfParser\Filter\LzwException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Filter\LzwException::LZW_FLAVOUR_NOT_SUPPORTED
      */
     public function testDecodeWithLZWflavour()
     {

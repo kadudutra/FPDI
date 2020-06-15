@@ -1,14 +1,14 @@
 <?php
 
-namespace setasign\Fpdi\unit\PdfParser;
+namespace kadudutra\Fpdi\unit\PdfParser;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReference;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
-use setasign\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReference;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObjectReference;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
 
 class PdfParserTest extends TestCase
 {

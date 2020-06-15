@@ -1,11 +1,11 @@
 <?php
 
-namespace setasign\Fpdi\unit\PdfParser\Type;
+namespace kadudutra\Fpdi\unit\PdfParser\Type;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfString;
-use setasign\Fpdi\PdfParser\Type\PdfToken;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\Type\PdfToken;
 
 class PdfTokenTest extends TestCase
 {
@@ -17,8 +17,8 @@ class PdfTokenTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
      */
     public function testEnsureWithInvlaidArgument1()
     {
@@ -26,8 +26,8 @@ class PdfTokenTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
      */
     public function testEnsureWithInvlaidArgument2()
     {

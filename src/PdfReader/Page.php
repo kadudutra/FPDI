@@ -2,31 +2,31 @@
 /**
  * This file is part of FPDI
  *
- * @package   setasign\Fpdi
+ * @package   kadudutra\Fpdi
  * @copyright Copyright (c) 2020 Setasign GmbH & Co. KG (https://www.setasign.com)
  * @license   http://opensource.org/licenses/mit-license The MIT License
  */
 
-namespace setasign\Fpdi\PdfReader;
+namespace kadudutra\Fpdi\PdfReader;
 
-use setasign\Fpdi\PdfParser\Filter\FilterException;
-use setasign\Fpdi\PdfParser\PdfParser;
-use setasign\Fpdi\PdfParser\PdfParserException;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfDictionary;
-use setasign\Fpdi\PdfParser\Type\PdfIndirectObject;
-use setasign\Fpdi\PdfParser\Type\PdfNull;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfStream;
-use setasign\Fpdi\PdfParser\Type\PdfType;
-use setasign\Fpdi\PdfParser\Type\PdfTypeException;
-use setasign\Fpdi\PdfReader\DataStructure\Rectangle;
-use setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException;
+use kadudutra\Fpdi\PdfParser\Filter\FilterException;
+use kadudutra\Fpdi\PdfParser\PdfParser;
+use kadudutra\Fpdi\PdfParser\PdfParserException;
+use kadudutra\Fpdi\PdfParser\Type\PdfArray;
+use kadudutra\Fpdi\PdfParser\Type\PdfDictionary;
+use kadudutra\Fpdi\PdfParser\Type\PdfIndirectObject;
+use kadudutra\Fpdi\PdfParser\Type\PdfNull;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfStream;
+use kadudutra\Fpdi\PdfParser\Type\PdfType;
+use kadudutra\Fpdi\PdfParser\Type\PdfTypeException;
+use kadudutra\Fpdi\PdfReader\DataStructure\Rectangle;
+use kadudutra\Fpdi\PdfParser\CrossReference\CrossReferenceException;
 
 /**
  * Class representing a page of a PDF document
  *
- * @package setasign\Fpdi\PdfReader
+ * @package kadudutra\Fpdi\PdfReader
  */
 class Page
 {

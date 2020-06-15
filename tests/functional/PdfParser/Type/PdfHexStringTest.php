@@ -1,11 +1,11 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Type;
+namespace kadudutra\Fpdi\functional\PdfParser\Type;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Tokenizer;
-use setasign\Fpdi\PdfParser\Type\PdfHexString;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Tokenizer;
+use kadudutra\Fpdi\PdfParser\Type\PdfHexString;
 
 class PdfHexStringTest extends TestCase
 {

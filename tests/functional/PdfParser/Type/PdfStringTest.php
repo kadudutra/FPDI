@@ -1,10 +1,10 @@
 <?php
 
-namespace setasign\Fpdi\functional\PdfParser\Type;
+namespace kadudutra\Fpdi\functional\PdfParser\Type;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\StreamReader;
-use setasign\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\StreamReader;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
 
 class PdfStringTest extends TestCase
 {

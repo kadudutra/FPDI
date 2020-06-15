@@ -1,12 +1,12 @@
 <?php
 
-namespace setasign\Fpdi\unit\PdfParser\Type;
+namespace kadudutra\Fpdi\unit\PdfParser\Type;
 
 use PHPUnit\Framework\TestCase;
-use setasign\Fpdi\PdfParser\Type\PdfArray;
-use setasign\Fpdi\PdfParser\Type\PdfName;
-use setasign\Fpdi\PdfParser\Type\PdfNumeric;
-use setasign\Fpdi\PdfParser\Type\PdfString;
+use kadudutra\Fpdi\PdfParser\Type\PdfArray;
+use kadudutra\Fpdi\PdfParser\Type\PdfName;
+use kadudutra\Fpdi\PdfParser\Type\PdfNumeric;
+use kadudutra\Fpdi\PdfParser\Type\PdfString;
 
 class PdfArrayTest extends TestCase
 {
@@ -24,8 +24,8 @@ class PdfArrayTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
      */
     public function testEnsureWithInvlaidArgument1()
     {
@@ -33,8 +33,8 @@ class PdfArrayTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_TYPE
      */
     public function testEnsureWithInvlaidArgument2()
     {
@@ -56,8 +56,8 @@ class PdfArrayTest extends TestCase
     }
 
     /**
-     * @expectedException \setasign\Fpdi\PdfParser\Type\PdfTypeException
-     * @expectedExceptionCode \setasign\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_SIZE
+     * @expectedException \kadudutra\Fpdi\PdfParser\Type\PdfTypeException
+     * @expectedExceptionCode \kadudutra\Fpdi\PdfParser\Type\PdfTypeException::INVALID_DATA_SIZE
      */
     public function testEnsureWithCountWithInvalidArgument()
     {
